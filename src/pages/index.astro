@@ -13,7 +13,7 @@ const penguins = rawPenguins.filter(
 );
 const previews = [
     {
-        title: "Morphologie du bec",
+        
         href: "/graphique1",
         options: {
             title: "Morphologie du bec des manchots de Palmer",
@@ -29,7 +29,7 @@ const previews = [
         },
     },
     {
-        title: "Masse corporelle",
+        
         href: "/graphique2",
         options: {
             title: "Distribution de la masse corporelle",
@@ -48,7 +48,7 @@ const previews = [
         },
     },
     {
-        title: "Effectif par espèce et sexe",
+       
         href: "/graphique3",
         options: {
             title: "Effectif recensé par espèce et par sexe",
@@ -66,7 +66,7 @@ const previews = [
         },
     },
     {
-        title: "Longueur des nageoires",
+        
         href: "/graphique4",
         options: {
             title: "Longueur des nageoires par espèce",
@@ -86,7 +86,7 @@ const previews = [
 ---
 
 <Layout title="Manchots de Palmer">
-    <main>
+    <main class="ml-40 mt-10">
         <h1>Manchots de Palmer</h1>
         <p>Explorez les quatre graphiques de l'étude.</p>
         <section aria-label="Aperçu des graphiques">
@@ -101,7 +101,7 @@ const previews = [
                                 height: 300,
                             }}
                         />
-                        <a href={preview.href}>Voir le graphique</a>
+                        <a href={preview.href} class="button text-blue-700">Voir le graphique</a>
                     </article>
                 ))
             }
